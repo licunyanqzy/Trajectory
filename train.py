@@ -176,7 +176,7 @@ def main(args):
 
     os.environ["CUDA_VISIBLE_DEVICES"] = args.gpu_num
     train_path = utils.get_dset_path(args.dataset_name, "train")
-    val_path = utils.get_dset_path(args.dataset_name, "test")
+    val_path = utils.get_dset_path(args.dataset_name, "val")
 
     logging.info("Initializing train dataset")
     train_dset, train_loader = data_loader(args, train_path)
